@@ -26,7 +26,13 @@
         <a href="#backend">Back End</a>
         <a href="#gee">Ciência de Dados Geoespaciais</a>
       </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+      </div>
     </header>
+
     <main class="container">
       <a href="#home"><i id="link-home" class='bx bx-up-arrow-circle' ></i></a>
       <section id="home">
@@ -435,7 +441,15 @@
 
         </footer>  
     </main>
-  </body>
+            <script>
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+        </script>
+</body>
 </html>
 
 

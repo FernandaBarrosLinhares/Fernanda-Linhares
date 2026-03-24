@@ -565,3 +565,129 @@ body {
 .grupo-card {
   min-width: 0;
 }
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  position: absolute;
+  right: 20px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--laranja);
+  transition: 0.3s;
+}
+
+
+
+@media (max-width: 768px) {
+
+ 
+  .header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header-menu {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 100%;
+    background-color: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .header-menu a {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-menu.active {
+    display: flex;
+  }
+
+
+  #home {
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+  }
+
+  #home img {
+    width: 180px;
+    height: 180px;
+  }
+
+  #home h1 {
+    font-size: 2em;
+  }
+
+  
+  #sobre {
+    flex-direction: column;
+    padding: 2em;
+  }
+
+ 
+  .grupo-grid {
+    grid-template-columns: 1fr;
+  }
+
+@media (max-width: 768px) {
+
+
+
+  .gee-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gee-intro {
+    text-align: center;
+  }
+
+  .gee-text {
+    text-align: justify;
+    font-size: 0.95em;
+  }
+
+  .gee-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gee-tabs button {
+    flex: 1 1 45%;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .gee-content {
+    width: 100%;
+  }
+
+  .gee-card {
+    width: 100%;
+  }
+
+  .gee-images {
+    height: 200px;
+    margin-top: 10px;
+  }
+}
+
+}
